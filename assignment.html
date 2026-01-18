@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment3</title>
+</head>
+<body>
+    <h2>Câu 1: Bài tập về Iframe</h2>
+    <p>
+        <b>Yêu cầu: </b>vào trang google map, tìm 1 địa điểm yêu thích và nhúng thẻ iframe của google map vào website. Để hiện thị được như sau<br>
+        <b>Lưu ý: </b>Thứ tự lên google và tìm hiểu cách nhúng bản đồ vào website
+    </p>
+    <iframe 
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3494.42379356112!2d107.30401187472944!3d16.628808484134694!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x314101ee8a1dcde5%3A0x4cdbe6d4c47daf3d!2zQsawdSDEkGnhu4duIE3hu7kgQ2jDoW5o!5e1!3m2!1svi!2s!4v1764329739379!5m2!1svi!2s" 
+        width="600" 
+        height="450" 
+        style="border:0;" 
+        allowfullscreen="" 
+        loading="lazy" 
+        referrerpolicy="no-referrer-when-downgrade">
+    </iframe>
+    <h2>Bài tập về form</h2>
+    <p>
+        <b>Yêu cầu</b>: Tạo form đăng ký như form bên dưới. Phải có thẻ form bọc bên ngoài. Khi click vào label phải focus vào đúng ô input tương ứng với label đó. Các ô input phải yêu cầu nhập nội dung cho đăng ký.
+    </p>
+    <form action="https://www.w3schools.com/action_page.php" target="_blank">
+        <label for="fullName">Họ tên:</label><br>
+        <input type="text" name="fullName" id="fullName"><br>
+
+        <label for="email">Email:</label><br>
+        <input type="email" name="email" id="email"><br>
+
+        <input type="submit" name="Đăng ký">
+    </form>
+    <h2>Câu 3: Bài tập để ôn lại kiến thức về form</h2>
+    <p>
+        <b>Yêu cầu</b>: Vẽ lại các thẻ dưới đây:
+    </p>
+    <h4>- Thẻ input</h4>
+    <form action="https://www.w3schools.com/action_page.php" target="_blank">
+        <label for="fullName2">Kiểu text:</label><br>
+        <input type="text" placeholder="Nhập họ và tên..." name="fullName" id="fullName2" required><br><br>
+
+        <label for="email2">Kiểu email:</label><br>
+        <input type="email" name="email2" id="email2" placeholder="Nhập email" required><br><br>
+
+        <label for="password">Kiểu password:</label><br>
+        <input type="password" name="password" id="password" placeholder="" required><br><br>
+
+        <label for="number">Kiểu number:</label><br>
+        <input type="number" name="number" id="number" placeholder="" required><br><br>
+
+        <label for="date">Kiểu date:</label><br>
+        <input type="date" name="date" id="date" placeholder="" required><br><br>
+
+        <label for="file">Kiểu file:</label><br>
+        <input type="file" name="file" id="file" placeholder="" required><br><br>
+
+        <label for="time">Kiểu time:</label><br>
+        <input type="time" name="time" id="time" placeholder="" required><br><br>
+
+        <p>Kiểu radio:</p>
+
+        <input type="radio" id="Nam" name="radio" value="Nam" required>
+        <label for="Nam">Nam</label><br>
+        
+        <input type="radio" id="Nu" name="radio" value="Nữ" required>
+        <label for="Nu">Nữ</label><br>
+
+        <input type="radio" id="Khac" name="radio" value="Khác" required>
+        <label for="Khac">Khác</label><br><br>
+
+        <label for=""></label>Kiểu range:<br>
+        <p>Âm lượng (min = 0 và max = 100)</p>
+        <input type="range" min="0" max="100" required><br><br>
+        
+        <label for=""></label>Kiểu color:<br>
+        <input type="color" name="color" id="color" placeholder="" required>
+
+        <h3>-Thẻ select:</h3>
+        <label for="danhmuc">Chọn danh mục:</label><br>
+        <select name="danhmuc" id="danhmuc" >
+            <option value="Nhan">Nhân</option>
+            <option value="Quan" selected>Quân</option>
+            <option value="Nhi">Nhi</option>
+            <option value="Bao">Bảo</option>
+            <option value="Quang">Quang</option>
+        </select><br><br>
+
+        <label for="textarea"></label><b>- Thẻ textarea(có cols = 30 và rows = 10):</b><br>
+        <textarea name="textarea" id="textarea" cols="30" rows="10"></textarea><br>
+
+        <input type="submit" name="Gửi">
+    </form>
+</body>
+</html>

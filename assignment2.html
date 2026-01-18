@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment 2</title>
+</head>
+<body>
+    <h1>Đăng ký thành viên</h1>
+
+    <style>
+            table, tr, th, td{
+                border: 1px solid #ddd;
+            }
+            th, td{
+                padding: 10px;
+            }
+        </style>
+    <form action="https://www.w3schools.com/action_page.php" target="_blank" method="POST">
+        <table>
+            <tr>
+                <td><label for="fullName">Họ tên</label></td>
+                <td>
+                    <input type="text" id="fullName" name="fullName" placeholder="Vui lòng nhập họ tên" required>
+                </td>
+            </tr>
+            <tr>
+                <td><label for="password">Mật khẩu</label></td>
+                <td>
+                    <input type="password" id="password" name="password" placeholder="Vui lòng nhập mật khẩu" required>
+                </td>
+            </tr>
+            <tr>
+                <td><label for="xemphim">Sở thích</label></td>
+                <td>
+                    <input type="checkbox" id="xemphim" name="soThich" value="Xem phim" required>
+                    <label for="xemphim">Xem phim</label><br>
+
+                    <input type="checkbox" id="docsach" name="soThich" value="Đọc sách" required>
+                    <label for="docsach">Đọc sách</label><br>
+
+                    <input type="checkbox" id="nghenhac" name="soThich" value="Nghe nhạc" required>
+                    <label for="nghenhac">Nghe Nhạc</label>
+                </td>
+            </tr>
+            <tr>
+                <td><label for="age">Tuổi</label></td>
+                <td><input type="number" id="age" name="age" placeholder="15" required></td>
+            </tr>
+            <tr>
+                <td><label for="searchKey">Từ khóa tìm kiếm</label></td>
+                <td><input type="text" id="searchKey" name="tuKhoaTimKiem" placeholder="từ khóa" required></td>
+            </tr>
+            <tr>
+                <td><label for="description">Giới thiệu bản thân</label></td>
+                <td>
+                    <textarea name="description" id="description" cols="70" rows="10" placeholder="Mô tả bản thân"></textarea>
+                </td>
+            </tr>
+            <tr>
+                <td><label for="email">Email có thể liên hệ</label></td>
+                <td><input type="email" id="email" name="email" placeholder="abc@gmail.com" required></td>
+            </tr>
+            <tr>
+                <td><label for="web">Địa chỉ web của bạn</label></td>
+                <td><input type="text" id="web" name="web" placeholder="url" required></td>
+            </tr>
+            <tr>
+                <td><label for="">Các loại thời gian</label></td>
+                <td>
+                    <h4>Ngày tháng</h4>
+                    <label for="date">Chọn ngày</label>
+                    <input type="date" id="date" name="date" required><br>
+
+                    <label for="month">Chọn tháng</label>
+                    <input type="month" id="month" name="month" required><br>
+
+                    <label for="week">Chọn tuần</label>
+                    <input type="week" name="week" id="week"><br>
+
+                    <h4>Giờ</h4>
+                    <label for="time">Chọn giờ</label>
+                    <input type="time" id="time" name="time" required><br>
+
+                    <label for="datetime">Chọn cả Ngày - Giờ</label>
+                    <input type="datetime-local" id="datetime" name="datetime">
+                </td>
+            </tr>
+            <tr>
+                <td><label for="color">Màu yêu thích</label></td>
+                <td><input type="color" id="color" name="color" required></td>
+            </tr>
+            <tr>
+                <td><label for="city">Bạn đang sinh sống ở thành phố nào</label></td>
+                <td><input type="text" id="city" name="city" placeholder="Quảng Trị" required></td>
+        </table>
+        <input type="submit" value="Gửi">
+    </form>
+</body>
+</html>
